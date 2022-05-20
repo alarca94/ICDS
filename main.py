@@ -98,8 +98,8 @@ def main_statistical_analysis():
     f_comp = functions._comp
 
     word_vecs = []
-    # if 'W2V' in table.conf.unique():
-    #     word_vecs = read_word2vec()
+    if 'W2V' in table.conf.unique():
+        word_vecs = read_word2vec()
 
     perform_stat_analysis(sentences, experiments, word_vecs, table, f_comp=f_comp, f_corr=f_corr)
 
